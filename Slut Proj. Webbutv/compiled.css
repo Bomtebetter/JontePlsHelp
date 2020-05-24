@@ -123,11 +123,11 @@ body .main-grid-container .right {
   grid-area: right;
 }
 
-@media (min-width: 1200px) {
-  body .main-grid-container .left,
-  body .main-grid-container .right {
-    min-width: 15vw;
-  }
+body .main-grid-container .left,
+body .main-grid-container .right {
+  /*@media (min-width: 1200px) {
+                min-width: 15vw;
+            }*/
 }
 
 body footer {
@@ -140,36 +140,33 @@ body footer {
   color: white;
 }
 
-body div.topnav {
-  position: relative;
-  z-index: 5;
-}
-
-body div.topnav nav.topnav {
+body nav.topnav {
   overflow: hidden;
   background-color: #7678ED;
   border-bottom: 5px solid #3D348B;
+  position: static;
+  z-index: 5;
 }
 
-body div.topnav nav.topnav .dropdown {
+body nav.topnav .dropdown {
   float: left;
   overflow: hidden;
   /* Add a color to the active/current link */
 }
 
-body div.topnav nav.topnav .dropdown:hover .dropdown-content {
+body nav.topnav .dropdown:hover .dropdown-content {
   display: block;
 }
 
-body div.topnav nav.topnav .dropdown:hover .dropbtn {
+body nav.topnav .dropdown:hover .dropbtn {
   background-color: #7678ED;
 }
 
-body div.topnav nav.topnav .dropdown.active {
+body nav.topnav .dropdown.active {
   background-color: #3D348B;
 }
 
-body div.topnav nav.topnav .dropdown .dropbtn {
+body nav.topnav .dropdown .dropbtn {
   font-size: 16px;
   border: none;
   outline: none;
@@ -180,7 +177,7 @@ body div.topnav nav.topnav .dropdown .dropbtn {
   margin: 0;
 }
 
-body div.topnav nav.topnav .dropdown .dropdown-content {
+body nav.topnav .dropdown .dropdown-content {
   display: none;
   position: absolute;
   background-color: #7678ED;
@@ -190,7 +187,7 @@ body div.topnav nav.topnav .dropdown .dropdown-content {
   z-index: 9;
 }
 
-body div.topnav nav.topnav .dropdown .dropdown-content a {
+body nav.topnav .dropdown .dropdown-content a {
   float: none;
   color: #fff;
   padding: 12px 16px;
@@ -199,11 +196,11 @@ body div.topnav nav.topnav .dropdown .dropdown-content a {
   text-align: left;
 }
 
-body div.topnav nav.topnav .dropdown .dropdown-content a:hover {
+body nav.topnav .dropdown .dropdown-content a:hover {
   background-color: #3D348B;
 }
 
-body div.topnav nav.topnav a {
+body nav.topnav a {
   float: left;
   font-size: 16px;
   color: white;
@@ -212,18 +209,18 @@ body div.topnav nav.topnav a {
   text-decoration: none;
 }
 
-body div.topnav nav.topnav a .dropdown:hover .dropbtn {
+body nav.topnav a .dropdown:hover .dropbtn {
   background-color: #7678ED;
 }
 
-body div.topnav nav.topnav a.active {
+body nav.topnav a.active {
   background-color: #3D348B;
   color: white;
 }
 
-body div.topnav nav.topnav a iframe,
-body div.topnav nav.topnav a .contact-form,
-body div.topnav nav.topnav a .slideshow-container {
+body nav.topnav a iframe,
+body nav.topnav a .contact-form,
+body nav.topnav a .slideshow-container {
   -ms-grid-column: 2;
   grid-column: 2;
   -ms-grid-row: 1;
@@ -233,10 +230,10 @@ body div.topnav nav.topnav a .slideshow-container {
   margin-top: 10%;
 }
 
-body div.topnav nav.topnav a input[type=text],
-body div.topnav nav.topnav a input[type=mail],
-body div.topnav nav.topnav a select,
-body div.topnav nav.topnav a textarea {
+body nav.topnav a input[type=text],
+body nav.topnav a input[type=mail],
+body nav.topnav a select,
+body nav.topnav a textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -244,7 +241,7 @@ body div.topnav nav.topnav a textarea {
   resize: vertical;
 }
 
-body div.topnav nav.topnav a label {
+body nav.topnav a label {
   padding: 12px 12px 12px 0;
   display: inline-block;
 }
