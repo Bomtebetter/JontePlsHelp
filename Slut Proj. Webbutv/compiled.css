@@ -101,6 +101,14 @@ body .main-grid-container .grid-container .main-article {
   padding: 0 20px;
 }
 
+body .main-grid-container .grid-container > .contact-form {
+  width: 50%;
+}
+
+body .main-grid-container .grid-container > .contact-form > #name, body .main-grid-container .grid-container > .contact-form #mail, body .main-grid-container .grid-container > .contact-form #country, body .main-grid-container .grid-container > .contact-form #subject {
+  width: 80%;
+}
+
 body .main-grid-container .left {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
