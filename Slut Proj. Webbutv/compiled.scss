@@ -73,6 +73,16 @@ body {
             float: left;
             overflow: hidden;
 
+            &:hover {
+                .dropdown-content {
+                    display: block;
+                }
+
+                .dropbtn {
+                    background-color: #7678ED;
+                }
+            }
+
             .dropbtn {
                 font-size: 16px;
                 border: none;
@@ -115,7 +125,6 @@ body {
             padding: 14px 16px;
             text-decoration: none;
 
-            &:hover,
             .dropdown:hover .dropbtn {
                 background-color: #7678ED;
             }

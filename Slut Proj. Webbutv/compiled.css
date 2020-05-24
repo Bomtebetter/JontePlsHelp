@@ -93,6 +93,14 @@ body nav.topnav .dropdown {
   overflow: hidden;
 }
 
+body nav.topnav .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+body nav.topnav .dropdown:hover .dropbtn {
+  background-color: #7678ED;
+}
+
 body nav.topnav .dropdown .dropbtn {
   font-size: 16px;
   border: none;
@@ -136,7 +144,6 @@ body nav.topnav a {
   text-decoration: none;
 }
 
-body nav.topnav a:hover,
 body nav.topnav a .dropdown:hover .dropbtn {
   background-color: #7678ED;
 }
