@@ -8,33 +8,35 @@
 <body>
     <nav class="topnav">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li class="active">
-                <a href="food.html">Food</a>
-                <ul>
-                    <li><a href="waffle.html">Waffle</a></li>
-                    <li><a href="baconglass.html">baconglass</a></li>
-                </ul>
-            </li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
-    <div class="main-grid-container">
-        <div class="left">Column</div>
-        <div class="middle">
-            <div class="grid-container">
-                <iframe src="https://www.youtube.com/embed/-FrpuPLYnvY" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+            <nav class="topnav">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <button class="active" class="dropbtn">Food
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="baconglass.html">Bacon ice cream</a>
+                        <a href="waffle.html">Waffle</a>
+                    </div>
+                </div>
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About</a>
+            </nav>
+            <div class="main-grid-container">
+                <div class="left">Column</div>
+                <div class="middle">
+                    <div class="grid-container">
+                        <iframe src="https://www.youtube.com/embed/-FrpuPLYnvY" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+
+                    </div>
+                </div>
+                <div class="right">Column</div>
+
 
             </div>
-        </div>
-        <div class="right">Column</div>
-
-
-    </div>
-    <footer>
-        <p>Footer</p>
-    </footer>
+            <footer>
+                <p>Footer</p>
+            </footer>
 </body>

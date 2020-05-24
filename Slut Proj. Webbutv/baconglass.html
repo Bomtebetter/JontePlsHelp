@@ -7,18 +7,19 @@
 
 <body>
     <div class="topnav">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li class="active">
-                <a href="food.html">Food</a>
-                <ul>
-                    <li><a href="waffle.html">Waffle</a></li>
-                    <li class="active"><a href="baconglass.html">Baconglass</a></li>
-                </ul>
-            </li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
+        <nav class="topnav">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Food
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="baconglass.html">Bacon ice cream</a>
+                    <a href="waffle.html">Waffle</a>
+                </div>
+            </div>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
     </div>
     <div class="main-grid-container">
         <div class="left">Column</div>
