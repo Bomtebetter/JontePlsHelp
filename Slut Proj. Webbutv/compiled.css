@@ -1,10 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Nixie+One&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Nixie One, serif;
+  font-weight: 900;
+}
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Montserrat, sans-serif;
   margin: 0;
   background-image: url(korvBlurred.jpg);
   background-repeat: no-repeat;
@@ -16,7 +27,6 @@ body {
   /* Add a black background color to the top navigation */
   /* Style the links inside the navigation bar */
   /* Change the color of links on hover */
-  /* Add a color to the active/current link */
   /* Clear floats after the columns */
   /* Slideshow container */
   /* Hide the images by default */
@@ -50,9 +60,9 @@ body .main-grid-container .article-heading h1 {
   top: 200px;
   line-height: 0;
   margin: 0;
-  font-size: 48px;
-  color: #3d348b;
-  text-shadow: #7678ED 0 0 10px;
+  font-size: 64px;
+  color: #F7B801;
+  text-shadow: #F18701 0 0 10px;
   text-align: center;
 }
 
@@ -129,6 +139,7 @@ body nav.topnav {
 body nav.topnav .dropdown {
   float: left;
   overflow: hidden;
+  /* Add a color to the active/current link */
 }
 
 body nav.topnav .dropdown:hover .dropdown-content {
@@ -137,6 +148,10 @@ body nav.topnav .dropdown:hover .dropdown-content {
 
 body nav.topnav .dropdown:hover .dropbtn {
   background-color: #7678ED;
+}
+
+body nav.topnav .dropdown.active {
+  background-color: #3D348B;
 }
 
 body nav.topnav .dropdown .dropbtn {

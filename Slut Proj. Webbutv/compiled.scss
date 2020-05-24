@@ -1,9 +1,22 @@
+// Font import
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nixie+One&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Nixie One, serif;
+    font-weight: 900;
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Montserrat, sans-serif;
     margin: 0;
     background-image: url(korvBlurred.jpg);
     background-repeat: no-repeat;
@@ -27,9 +40,9 @@ body {
                 top: 200px;
                 line-height: 0;
                 margin: 0;
-                font-size: 48px;
-                color: #3d348b;
-                text-shadow: #7678ED 0 0 10px;
+                font-size: 64px;
+                color: #F7B801;
+                text-shadow: #F18701 0 0 10px;
                 text-align: center;
             }
 
@@ -120,6 +133,11 @@ body {
                 }
             }
 
+            /* Add a color to the active/current link */
+            &.active {
+                background-color: #3D348B;
+            }
+
             .dropbtn {
                 font-size: 16px;
                 border: none;
@@ -206,8 +224,6 @@ body {
     /* Style the links inside the navigation bar */
 
     /* Change the color of links on hover */
-
-    /* Add a color to the active/current link */
 
     input[type=submit] {
         background-color: #4CAF50;
